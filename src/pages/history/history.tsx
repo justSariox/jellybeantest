@@ -7,7 +7,7 @@ export const History = () => {
     const [pageSize, setPageSize] = useState(10)
     const {data: history, isLoading, isError} = useGetMilestonesQuery({pageSize})
     const milestones = history?.items.map((item) => (
-        <Timeline.Item key={item.id}>
+        <Timeline.Item key={item.mileStoneId}>
             <Typography.Text>{item.year} {item.description}</Typography.Text>
         </Timeline.Item>
     ));

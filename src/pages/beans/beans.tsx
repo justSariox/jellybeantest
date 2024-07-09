@@ -26,7 +26,7 @@ export const Beans = () => {
                     <CustomCard
                         isLoading={isFetching}
                         key={b.beanId}
-                        id={b.beanId}
+                        id={b.beanId.toString()}
                         title={b.flavorName}
                         imageUrl={b.imageUrl}/>)}
             </div>

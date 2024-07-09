@@ -11,7 +11,7 @@ export type CombinationResponseType = Pagination & {
 }
 
 export type CombinationParamsType = {
-    name: string,
-    pageIndex: number,
-    pageSize: number
+    name?: string,
+    pageIndex?: number,
+    pageSize?: number
 }

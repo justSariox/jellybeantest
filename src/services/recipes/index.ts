@@ -15,7 +15,7 @@ export const recipesApi = createApi({
                     params: params ?? {},
                 }) ,
             }),
-            getRecipeById: builder.query<RecipeType, {id: string}>({
+            getRecipeById: builder.query<RecipeType, {id?: string}>({
                 query: ({id}) => `recipes/${id}`
             })
         }

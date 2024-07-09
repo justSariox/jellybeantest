@@ -11,7 +11,7 @@ export type MilestonesResponseType = Pagination & {
 }
 
 export type MilestonesParamsType = {
-    year: number,
-    pageIndex: number,
-    pageSize: number
+    year?: number,
+    pageIndex?: number,
+    pageSize?: number
 }

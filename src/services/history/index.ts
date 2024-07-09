@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { MilestonesParamsType, MilestonesResponseType } from "@/services/history/types";
+import {MilestonesParamsType, MilestonesResponseType, MilestoneType} from "@/services/history/types";
 
 export const historyApi = createApi({
     reducerPath: 'historyApi',
@@ -15,7 +15,7 @@ export const historyApi = createApi({
                     params: params ?? {}
                 }),
             }),
-            getMilestoneById: builder.query<any, {id: string}>({
+            getMilestoneById: builder.query<MilestoneType, {id?: string}>({
                 query: ({id}) => `milestones/${id}`
             })
         }

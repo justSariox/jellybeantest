@@ -15,7 +15,7 @@ export const combinationsApi = createApi({
                     params: params ?? {}
                 }),
             }),
-            getCombinationById: builder.query<CombinationType, {id: string}>({
+            getCombinationById: builder.query<CombinationType, {id?: string}>({
                 query: ({id}) => `combinations/${id}`
             })
         }

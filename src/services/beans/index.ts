@@ -15,7 +15,7 @@ export const beansApi = createApi({
                     params: params ?? {}
                 }),
             }),
-            getBeanById: builder.query<BeanType, {id: string}>({
+            getBeanById: builder.query<BeanType, {id?: string}>({
                 query: ({id}) => `Beans/${id}`
             })
         }

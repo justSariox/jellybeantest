@@ -22,7 +22,7 @@ export type RecipesResponseType = Pagination & {
 }
 
 export type RecipeParamsType = {
-    name: string
-    pageIndex: number,
-    pageSize: number
+    name?: string
+    pageIndex?: number,
+    pageSize?: number
 }

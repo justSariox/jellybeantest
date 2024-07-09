@@ -21,9 +21,8 @@ export const Facts = () => {
                     <CustomCard
                         isLoading={isFetching}
                         key={b.factId}
-                        id={b.factId}
+                        id={b.factId.toString()}
                         title={b.title}
-                        imageUrl={b.imageUrl}
                         className={s.factCard}
                     />
                 )}

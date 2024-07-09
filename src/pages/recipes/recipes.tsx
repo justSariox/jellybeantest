@@ -21,7 +21,7 @@ export const Recipes = () => {
                     <CustomCard
                         isLoading={isFetching}
                         key={b.recipeId}
-                        id={b.recipeId}
+                        id={b.recipeId.toString()}
                         title={b.name}
                         imageUrl={b.imageUrl}/>)}
             </div>

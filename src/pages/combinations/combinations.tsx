@@ -9,7 +9,7 @@ import { Loader } from "@/components";
 export const Combinations = () => {
     const [combinationId, setCombinationId] = useState<number>()
     const { data: combinations, isLoading, isError } = useGetCombinationsQuery({pageSize: 100})
-    const { data: combination } = useGetCombinationByIdQuery({id: combinationId})
+    const { data: combination } = useGetCombinationByIdQuery({id: combinationId?.toString()})
 
     const getRandomCombinationHandler = () => {
         setCombinationId(getRandomId(combinations))

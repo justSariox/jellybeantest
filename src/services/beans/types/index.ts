@@ -21,14 +21,14 @@ export type BeansRepsonseType = Pagination & {
 }
 
 export type BeansParamsType = {
-    groupName: string[],
-    flavorName: string,
-    colorGroup: string,
-    glutenFree: boolean,
-    sugarFree: boolean,
-    seasonal: boolean,
-    kosher: boolean,
-    pageIndex: number,
-    pageSize: number,
+    pageSize?: number,
+    groupName?: string[],
+    flavorName?: string,
+    colorGroup?: string,
+    glutenFree?: boolean,
+    sugarFree?: boolean,
+    seasonal?: boolean,
+    kosher?: boolean,
+    pageIndex?: number,
 
 }

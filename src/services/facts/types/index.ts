@@ -11,7 +11,7 @@ export type FactsResponseType = Pagination & {
 }
 
 export type FactsParamsType = {
-    title: string,
-    pageIndex: number,
-    pageSize: number
+    title?: string,
+    pageIndex?: number,
+    pageSize?: number
 }

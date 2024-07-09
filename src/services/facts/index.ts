@@ -16,7 +16,7 @@ export const factsApi = createApi({
                 }),
 
             }),
-            getFactById: builder.query<FactType, {id: string}>({
+            getFactById: builder.query<FactType, {id?: string}>({
                 query: ({id}) => `Facts/${id}`
             })
         }

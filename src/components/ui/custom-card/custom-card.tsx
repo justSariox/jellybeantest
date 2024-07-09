@@ -3,9 +3,9 @@ import s from './custom-card.module.scss'
 import { useNavigate } from "react-router-dom";
 
 type Props = {
-    id: string,
-    title: string,
-    imageUrl: string
+    id?: string,
+    title?: string,
+    imageUrl?: string
     isLoading?: boolean
     className?: string
 }
@@ -19,7 +19,7 @@ export const CustomCard = (props: Props) => {
             <Card className={`${s.card} ${className}`} hoverable cover={<Skeleton/>}>
                 <Skeleton title={true} paragraph={{ rows: 1 }} style={{ textAlign: 'center' }} />
                 <Button type='link' style={{ width: '100%' }}>
-                    <Skeleton button={true} />
+                    <Skeleton />
                 </Button>
             </Card>
         ) : (
