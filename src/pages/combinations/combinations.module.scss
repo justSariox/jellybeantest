@@ -1,0 +1,18 @@
+.combinationsPage {
+  display: flex;
+  flex-direction: column;
+
+  .pageTitle {
+    margin-left: 100px;
+  }
+
+  .button {
+    align-self: center;
+    width: 200px;
+  }
+
+  .combinationInfo {
+    align-self: center;
+  }
+}
+

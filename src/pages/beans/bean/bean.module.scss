@@ -1,0 +1,19 @@
+.pageTitle {
+  margin-left: 100px;
+}
+
+.content {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+
+  .info {
+    margin: 0;
+    width: 50%;
+    text-align: center;
+  }
+
+  .description {
+    width: 50%;
+  }
+}

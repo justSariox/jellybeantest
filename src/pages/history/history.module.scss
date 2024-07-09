@@ -1,0 +1,17 @@
+.historyPage {
+  display: flex;
+  flex-direction: column;
+
+  .pageTitle {
+    margin-left: 100px;
+  }
+
+  .timeline {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .button {
+    align-self: center;
+  }
+}
